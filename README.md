@@ -1,45 +1,29 @@
-# AURIX REA
+# Welcome to your Lovable project
 
-**Understand. Reverse Engineer. Recreate.**
+This project was built with [Lovable](https://lovable.dev).
 
-AURIX REA is a browser-based workspace for organizing authorized reverse-engineering investigations using the official [REA project](https://github.com/morluto/rea).
+## Build with Lovable
 
-## Current release
+Open your project in the [Lovable editor](https://lovable.dev) and keep building.
 
-The first frontend release includes:
-- A responsive dashboard for desktop and mobile
-- Investigation intake for websites, APKs, JavaScript/Electron, .NET, firmware, native binaries, databases, network recordings, and other targets
-- A local-session investigation queue
-- Explicit runtime connection status and setup requirements
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
+- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
 
-**Important:** the current frontend does not execute REA analysis yet. Investigation records currently exist only in the browser session. The official REA runtime must be installed in a separate authenticated worker before analysis can run. Do not expose an unauthenticated MCP endpoint to the public internet.
+## Development
 
-## Run locally
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-```bash
-npm install
+```sh
+git clone <this-repository-url>
+cd <repository-name>
+npm i
 npm run dev
 ```
 
-## Production build
+## Built with
 
-```bash
-npm run build
-```
-
-## Netlify
-
-Build command: `npm run build`  
-Publish directory: `dist`
-
-The repository includes `netlify.toml` for the Vite static build.
-
-## Authorization and safety
-
-Only examine software, files, systems, and services you own or are explicitly authorized to analyze. Do not use AURIX REA to access accounts, data, or systems without permission.
-
-## Official REA references
-
-- https://github.com/morluto/rea
-- https://rea.tools
-- https://www.npmjs.com/package/rea-agents
+- TanStack Start
+- TypeScript
+- React
+- Tailwind CSS
